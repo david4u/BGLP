@@ -1,5 +1,7 @@
 #include "MemoryControl.h"
 #include <random>
+#ifndef CPU_TRACE
+#define CPU_TRACE
 
 void readFirst(int n, int div, MemoryControl* mem, std::uint64_t range) {
     
@@ -63,3 +65,4 @@ int main(int argc, char** argv) {
     mem->PrintStats();
     delete(mem);
 }
+#endif
